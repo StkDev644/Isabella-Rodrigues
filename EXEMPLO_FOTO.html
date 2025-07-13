@@ -1,0 +1,71 @@
+<!-- EXEMPLO: Como adicionar sua foto no portfólio -->
+
+<!-- ATUAL (placeholder): -->
+<div class="image-placeholder">
+    <i class="fas fa-user-circle"></i>
+    <img src="/img/file.png" alt="">
+</div>
+
+<!-- SUBSTITUA POR: -->
+<div class="image-placeholder">
+    <img src="sua-foto.jpg" alt="Isabella Rodrigues" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+</div>
+
+<!-- OU, se quiser manter o efeito glassmorphism: -->
+<div class="image-placeholder" style="background: url('sua-foto.jpg') center/cover; border: 3px solid rgba(255, 255, 255, 0.3);">
+    <!-- Remova o ícone e texto -->
+</div>
+
+<!-- INSTRUÇÕES DETALHADAS: -->
+
+<!-- 1. Prepare sua foto: -->
+<!-- - Tamanho: 400x400 pixels (ou múltiplos de 400) -->
+<!-- - Formato: JPG ou PNG -->
+<!-- - Qualidade: Alta resolução -->
+<!-- - Fundo: Neutro ou transparente -->
+<!-- - Pose: Profissional e sorridente -->
+
+<!-- 2. Coloque a foto na pasta do projeto: -->
+<!-- - Crie uma pasta "images" -->
+<!-- - Salve sua foto como "isabella-foto.jpg" -->
+<!-- - Use o caminho: src="images/isabella-foto.jpg" -->
+
+<!-- 3. Exemplo completo: -->
+<div class="image-placeholder">
+    <img src="images/isabella-foto.jpg" alt="Isabella Rodrigues - Técnica em Edificações" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; box-shadow: 0 8px 32px rgba(255, 143, 163, 0.3);">
+</div>
+
+<!-- 4. Para melhor responsividade, adicione no CSS: -->
+<!-- 
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-placeholder:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 12px 40px rgba(255, 143, 163, 0.4);
+}
+-->
+
+<!-- 5. Dicas para uma boa foto: -->
+<!-- - Luz natural -->
+<!-- - Fundo simples -->
+<!-- - Roupas profissionais -->
+<!-- - Sorriso natural -->
+<!-- - Olhar para a câmera -->
+<!-- - Boa resolução -->
+<!-- - Formato adequado -->
+
+<!-- 6. Se não tiver uma foto profissional: -->
+<!-- - Use um avatar personalizado -->
+<!-- - Ou uma ilustração -->
+<!-- - Ou mantenha o placeholder até ter uma foto -->
+
+<!-- EXEMPLO COM AVATAR: -->
+<div class="image-placeholder">
+    <img src="https://ui-avatars.com/api/?name=Isabella+Rodrigues&background=ff8fa3&color=fff&size=300&font-size=0.4" alt="Isabella Rodrigues" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+</div> 
