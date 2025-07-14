@@ -1,0 +1,146 @@
+body{
+    background: #575244;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100dvh;
+    min-height: 100dvh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@keyframes pastelText {
+  0% { color: #f4a6a6; } /* Rosa claro */
+  33% { color: #a6d8f4; } /* Azul claro */
+  66% { color: #a6f4c5; } /* Verde claro */
+  100% { color: #f4a6a6; } /* Volta ao rosa claro */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+  }
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+a {
+    list-style-type: none;
+    text-decoration: none; 
+    color: black;
+    font-weight: 1000;
+    font-size: 1.04rem;
+}
+
+.container-top {
+  background-color: #FFFFF0;
+  display: flex;
+  justify-content: space-around;
+  gap: 10dvh;
+  padding-top: 4dvh;
+  padding-bottom: 4dvh; /* Adicionado para estender a área branca abaixo das escritas */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.container-top a:hover{
+  transform: scale(1.15);
+  transition: transform 0.2s ease;
+  animation: pastelText 4s infinite linear;
+}
+
+.container-top a:active{
+  transform: scale(1.00);
+  transition: transform 0.2s ease;
+}
+
+.container__center-text {
+  text-align: center;
+  font-style: italic;
+  font-family:'Times New Roman', Times, serif ;
+  padding-top: 1dvh;
+  animation: pastelText 9s infinite linear;
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+
+.carousel-container {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+.carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  min-width: 80vh;
+  height: 60vh;
+  background: #FFFFF0;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.card:hover{
+  animation: pastelText 1s infinite linear;
+}
+
+@media screen and (max-width: 801px){
+  .carousel-container{
+    gap: 00px;
+  padding: 00px;
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+  }
+
+  .carousel{
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    padding: 00px;
+  }
+
+  .card {
+    min-width: 10vh;
+    height: 50vh;
+    font-size: 34px;
+    font-size: 11px;
+  }
+
+  .container__center-text{
+    font-size: 3.0rem;
+  }
+
+  .a2{
+    padding-left: 3.7vh;
+  }
+}
+
+footer {
+  background-color: #575244; /* Exemplo de cor para o footer */
+  color: white; /* Cor do texto */
+  padding: 2vh;
+  text-align: center;
+}
+
+.container-footer{
+min-height: 10vh; /* Faz com que o conteúdo ocupe pelo menos toda a altura da tela */
+display: flex;
+flex-direction: column;
+text-align: center;
+
+}

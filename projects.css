@@ -1,0 +1,82 @@
+body{
+    background: #575244;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100dvh;
+    min-height: 100dvh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@keyframes pastelText {
+  0% { color: #f4a6a6; } /* Rosa claro */
+  33% { color: #a6d8f4; } /* Azul claro */
+  66% { color: #a6f4c5; } /* Verde claro */
+  100% { color: #f4a6a6; } /* Volta ao rosa claro */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+  }
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+  .container-top {
+    background-color: #FFFFF0;
+    display: flex;
+    justify-content: space-around;
+    gap: 10dvh;
+    padding-top: 4dvh;
+    padding-bottom: 4dvh; /* Adicionado para estender a área branca abaixo das escritas */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  }
+  
+  .container-top a:hover{
+    transform: scale(1.15);
+    transition: transform 0.2s ease;
+    animation: pastelText 4s infinite linear;
+  }
+  
+  .container-top a:active{
+    transform: scale(1.00);
+    transition: transform 0.2s ease;
+  }
+
+  a {
+    list-style-type: none;
+    text-decoration: none; 
+    color: black;
+    font-weight: 1000;
+    font-size: 1.04rem;
+}
+
+.container-centeritens{
+  display: flex;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.img-centeritens-1{
+  border-radius: 20px;
+  height: 30vh;
+  margin: 1.7vh;
+}
+
+.img-centeritens-2{
+  border-radius: 20px;
+  height: 30vh;
+  margin: 1.4vh;
+}
+
+.container__center-text {
+  text-align: center;
+  font-style: italic;
+  font-family:'Times New Roman', Times, serif ;
+  margin-top: 13vh;
+  animation: pastelText 4s infinite linear;
+  font-size: 2.5rem;
+  font-weight: 700;
+}

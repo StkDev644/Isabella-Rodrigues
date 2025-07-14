@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On</title>
+    <link rel="stylesheet" href="src/on.css">
+</head>
+<body>
+
+    <div class="container-top">
+        <a href="index.html">
+            HOME
+        </a>
+        <a class="a2" href="On.html">
+            ON
+        </a>
+        <a href="Projects.html">
+            PROJECTS
+        </a>
+</div>
+
+
+    <div class="image__reference">
+            <img src="./src/images/2b1c.png" alt="Your Face">
+            <p class="y-img">Your Image</p>
+       </div> 
+       <div class="container-textbandd">
+        <p class="p1">
+            Your Biography
+        </p>
+        <p class="p2">
+            Your Description
+        </p>
+       </div>
+
+    </div>
+    <div class="container__center-text">
+        <p class="center-text">
+            medals or achievements
+        </p>
+    </div>
+
+<div class="container-imgarrow">
+    <img src="./src/images/271210.png" alt="">
+</div>
+
+    </div>
+    <div class="carousel-container" id="carousel">
+        <div class="carousel">
+            <div class="card">Item 1 (medals or achievements)</div>
+            <div class="card">Item 2 (medals or achievements)</div>
+            <div class="card">Item 3 (medals or achievements)</div>
+            <div class="card">Item 4 (medals or achievements)</div>
+            <div class="card">Item 5 (medals or achievements)</div>
+            <div class="card">Item 6 (medals or achievements)</div>
+            <div class="card">Item 7 (medals or achievements)</div>
+            <div class="card">Item 8 (medals or achievements)</div>
+        </div>
+    </div>
+
+    <script>
+        const carousel = document.getElementById("carousel");
+
+        // Captura o scroll do mouse para mover horizontalmente
+        carousel.addEventListener("wheel", (event) => {
+            event.preventDefault();
+            carousel.scrollLeft += event.deltaY * 2;
+        });
+    </script>
+
+
+</body>
+</html>

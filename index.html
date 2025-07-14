@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="container-top">
+                <a href="">
+                    HOME
+                </a>
+                <a class="a2" href="On.html">
+                    ON
+                </a>
+                <a href="Projects.html">
+                    PROJECTS
+                </a>
+    </div>
+    <div class="container__center-text">
+        <p class="center-text">
+            EXPERIENCE's
+        </p>
+    </div>
+    <div class="carousel-container" id="carousel">
+        <div class="carousel">
+            <div class="card">Item 1 (companies you worked for/any courses)</div>
+            <div class="card">Item 2 (companies you worked for/any courses)</div>
+            <div class="card">Item 3 (companies you worked for/any courses)</div>
+            <div class="card">Item 4 (companies you worked for/any courses)</div>
+            <div class="card">Item 5 (companies you worked for/any courses)</div>
+            <div class="card">Item 6 (companies you worked for/any courses)</div>
+            <div class="card">Item 7 (companies you worked for/any courses)</div>
+            <div class="card">Item 8 (companies you worked for/any courses)</div>
+        </div>
+    </div>
+
+    <script>
+        const carousel = document.getElementById("carousel");
+
+        // Captura o scroll do mouse para mover horizontalmente
+        carousel.addEventListener("wheel", (event) => {
+            event.preventDefault();
+            carousel.scrollLeft += event.deltaY * 2;
+        });
+    </script>
+
+    <div class="container-footer">
+        <div class="content-footer">
+            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJNxNzXpSzwcKcPCMPNPVTftjdbzBJXKQNSQxlfKvPjcDwBskpJWxDNqRTWhmbcMkGdslBV">creator contact: sstkzzout@gmail.com</a>
+        </div>
+        <footer>
+            
+        </footer>
+    </div>
+   
+</body>
+</html>
